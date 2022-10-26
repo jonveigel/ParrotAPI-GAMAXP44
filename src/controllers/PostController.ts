@@ -9,7 +9,7 @@ export class PostController {
         const { authorization } = req.headers;
 
         if(!authorization) {
-            return
+            return;
         }
 
         const token = authorization.split(" ")[1];
@@ -50,6 +50,38 @@ export class PostController {
                 userphoto: true
             }}
         })
+
+        return res.send(posts);
+    }
+
+    async listAllByUserId(req: Request, res: Response) {
+        const { authorization } = req.headers;
+        if(!authorization) {
+            return;
+        }
+
+        const token = authorization.split(" ")[1];
+
+        let iduser;
+
+        try {
+            const jwtPayLoad = <any>jwt.verify(token, config.jwtSecret);
+            iduser = jwtPayLoad.userId
+        } catch (error) {
+            return res.status(401).send;
+        }
+
+        let user;
+
+        try {
+            user = await userRepository.findOneByOrFail({ iduser });
+        } catch (error) {
+            return res.status(404).send("User not found :(");
+        }
+
+        const posts = await postRepository.find({ where: {
+            user: { iduser: iduser }
+        }});
 
         return res.send(posts);
     }
