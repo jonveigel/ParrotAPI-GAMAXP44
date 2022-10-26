@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "build": "tsc",
+    "db:drop": "ts-node ./node_modules/typeorm-extension/dist/cli/index.js db:drop",
+    "db:create": "ts-node ./node_modules/typeorm-extension/dist/cli/index.js db:create",
     "start": "ts-node src/index.ts",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "typeorm": "typeorm-ts-node-commonjs",
+    "dev": "nodemon --exec ts-node ./src/index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -34,6 +38,7 @@
     "@types/validator": "^13.7.9",
     "babel-jest": "^29.2.2",
     "jest": "^29.2.2",
+    "nodemon": "^2.0.20",
     "ts-jest": "^29.0.3",
     "ts-node": "10.7.0",
     "typescript": "4.5.2"
