@@ -20,6 +20,9 @@ export class User {
     email: string
 
     @Column()
+    apartment: number
+
+    @Column()
     @Length(5, 120)
     password: string
 

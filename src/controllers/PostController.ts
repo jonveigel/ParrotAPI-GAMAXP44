@@ -39,4 +39,18 @@ export class PostController {
 
         return res.status(201).json({ message: "Post Created!!!!!" });
     }
+
+    async listAll(req: Request, res: Response) {
+        const posts = await postRepository.find({
+            relations: { user: true },
+            select: { user: {
+                iduser: true,
+                name: true,
+                apartment: true,
+                userphoto: true
+            }}
+        })
+
+        return res.send(posts);
+    }
 }
