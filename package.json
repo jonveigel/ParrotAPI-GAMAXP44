@@ -6,6 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
+    "migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migrations/default",
+    "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
     "db:drop": "ts-node ./node_modules/typeorm-extension/dist/cli/index.js db:drop",
     "db:create": "ts-node ./node_modules/typeorm-extension/dist/cli/index.js db:create",
     "start": "ts-node src/index.ts",
