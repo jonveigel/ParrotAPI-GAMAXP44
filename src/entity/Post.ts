@@ -1,5 +1,6 @@
 import { Length } from "class-validator";
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { User } from "./User";
 
 @Entity()
 export class Post {
@@ -18,5 +19,8 @@ export class Post {
     @UpdateDateColumn()
     updatedAt: Date
 
-    
+    @ManyToOne(() => User, user => user.post)
+
+    @JoinColumn({ name: 'user_iduser'})
+    user: User
 }

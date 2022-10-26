@@ -1,6 +1,7 @@
 import { IsNotEmpty, Length } from "class-validator"
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, Unique } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, Unique, OneToMany } from "typeorm"
 import bcrypt from "bcryptjs";
+import { Post } from "./Post";
 
 
 @Entity()
@@ -37,6 +38,9 @@ export class User {
     @Column()
     @UpdateDateColumn()
     updatedAt: Date
+
+    @OneToMany(() => Post, post => post.user)
+    post: Post[]
 
     passwordHash() {
         this.password = bcrypt.hashSync(this.password, 10)
