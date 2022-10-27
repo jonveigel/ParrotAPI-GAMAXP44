@@ -51,7 +51,7 @@ ficam visíveis para toda comunidade.
 
 
 ## Link Repositório Front-End
-<a href="https://github.com/pedrogoncaalves/Social-Parrot-ReactRedux" target="_blank">   
+<a href="" target="_blank">   
 
 
 
