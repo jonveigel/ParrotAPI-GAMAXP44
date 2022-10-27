@@ -48,10 +48,11 @@ ficam visíveis para toda comunidade.
 2 => Method: 'GET' {LIST BY ID} = `localhost:3000/admin/:iduser`
 
 
-
+ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+          flush privileges;
 
 ## Link Repositório Front-End
-<a href="" target="_blank">   
+<a href="https://github.com/lusouzarego/parrot-project" target="_blank">   
 
 
 
@@ -59,5 +60,4 @@ ficam visíveis para toda comunidade.
 
 
 
-          ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-          flush privileges;
+         
