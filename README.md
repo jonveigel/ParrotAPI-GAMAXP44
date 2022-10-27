@@ -22,7 +22,7 @@ ficam visíveis para toda comunidade.
 ## Documentação?
 
 1 => **Aqui Está!** <p align="center">
-<a href="https://insomnia.rest/run/?label=Parrot_grupo07&uri=https%3A%2F%2Fraw.githubusercontent.com%2FReygis%2FApiParrot%2Fmain%2Fdocs%2FInsomnia_2022-09-09.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+<a href=<a href="https://insomnia.rest/run/?label=ParrotAPI-GAMAXP44&uri=https%3A%2F%2Fgithub.com%2Fjonveigel%2FParrotAPI-GAMAXP44%2Fblob%2Fmain%2Fsrc%2Fdocs%2Finsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>></a>
 </p>
 
 
