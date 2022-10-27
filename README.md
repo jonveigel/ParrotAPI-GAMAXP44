@@ -41,7 +41,7 @@ ficam visíveis para toda comunidade.
 
 7 => Method: 'GET' {LIST BY ID} = `localhost:3000/post/myposts`
 
-===================================================================================
+===========================================================================
 **Rotas do Admin**
 
 1 => Method: 'GET' {LIST ALL USERS} = `localhost:3000/admin/users`
