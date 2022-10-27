@@ -21,7 +21,41 @@ ficam visíveis para toda comunidade.
 
 ## Documentação?
 
-1 => {Quase la kkk}
+1 => {Quase la kkk (RUN IN INSOMNIA)}
+
+
+
+## Quer saber sobre as rotas da API?
+
+1 => Method: 'POST' {USER LOGIN} = `localhost:3000/login`
+
+2 => Method: 'POST' {ADMIN LOGIN} = `localhost:3000/admin/login`
+
+3 => Method: 'POST' {CREATE USER} = `localhost:3000/user`
+
+4 => Method: 'PUT' {EDIT USER} = `localhost:3000/user`
+
+5 => Method: 'POST' {CREATE POST} = `localhost:3000/post`
+
+6 => Method: 'GET' {LIST ALL POSTS} = `localhost:3000/post`
+
+7 => Method: 'GET' {LIST BY ID} = `localhost:3000/post/myposts`
+
+===================================================================================
+**Rotas do Admin**
+
+1 => Method: 'GET' {LIST ALL USERS} = `localhost:3000/admin/users`
+
+2 => Method: 'GET' {LIST BY ID} = `localhost:3000/admin/:iduser`
+
+
+
+
+**Link Repositório Front-End**
+<a href="https://github.com/pedrogoncaalves/Social-Parrot-ReactRedux" target="_blank">   
+
+
+
 
 
 
