@@ -41,8 +41,7 @@ ficam visíveis para toda comunidade.
 
 7 => Method: 'GET' {LIST BY ID} = `localhost:3000/post/myposts`
 
-===========================================================================
-**Rotas do Admin**
+## Rotas do Admin
 
 1 => Method: 'GET' {LIST ALL USERS} = `localhost:3000/admin/users`
 
@@ -51,7 +50,7 @@ ficam visíveis para toda comunidade.
 
 
 
-**Link Repositório Front-End**
+## Link Repositório Front-End
 <a href="https://github.com/pedrogoncaalves/Social-Parrot-ReactRedux" target="_blank">   
 
 
