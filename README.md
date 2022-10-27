@@ -52,7 +52,7 @@ ficam visíveis para toda comunidade.
           flush privileges;
 
 ## Link Repositório Front-End
-<a href="https://github.com/lusouzarego/parrot-project" target="_blank">   
+<a href="https://github.com/lusouzarego/parrot-project" target="_blank"> Parrot Front-End Project</a>   
 
 
 
