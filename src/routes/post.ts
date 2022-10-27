@@ -1,11 +1,11 @@
 import { Router } from "express";
 import { PostController } from "../controllers/PostController";
-import { jwtMiddleware } from "../middleware/JwtMiddleware";
+import { JwtMiddleware } from "../middleware/JwtMiddleware";
 
 const router = Router();
 
-router.post("/", jwtMiddleware, new PostController().create);
-router.get("/", jwtMiddleware, new PostController().listAll);
-router.get("/myposts", jwtMiddleware, new PostController().listAllByUserId);
+router.post("/", JwtMiddleware, new PostController().create);
+router.get("/", JwtMiddleware, new PostController().listAll);
+router.get("/myposts", JwtMiddleware, new PostController().listAllByUserId);
 
 export default router;
